@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Profile Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <form action="https://formspree.io/f/mwppakez" method="POST" enctype="multipart/form-data">
+
+      <h2 class="mb-4">Personal Information</h2>
+
+      <div class="mb-3">
+        <label for="profilePicture" class="form-label">Profile Picture:</label>
+        <input type="file" class="form-control" id="profilePicture" name="profilePicture" accept="image/*" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="aboutMe" class="form-label">About Me:</label>
+        <textarea class="form-control" id="aboutMe" name="aboutMe" rows="4" placeholder="Write a brief professional description" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="resume" class="form-label">Resume:</label>
+        <input type="file" class="form-control" id="resume" name="resume" accept=".pdf" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="linkedin" class="form-label">LinkedIn Profile:</label>
+        <input type="url" class="form-control" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="github" class="form-label">GitHub Profile:</label>
+        <input type="url" class="form-control" id="github" name="github" placeholder="https://github.com/your-profile">
+      </div>
+
+      <div class="mb-3">
+        <label for="codepen" class="form-label">CodePen Profile:</label>
+        <input type="url" class="form-control" id="codepen" name="codepen" placeholder="https://codepen.io/your-profile">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+
+      <h2 class="mt-5 mb-4">Professional Experience</h2>
+
+      <div class="mb-3">
+        <label for="totalExperience" class="form-label">Total Years of Experience:</label>
+        <input type="number" class="form-control" id="totalExperience" name="totalExperience" placeholder="e.g., 5" required>
+      </div>
+
+      <fieldset class="border p-4 mb-4">
+        <legend class="w-auto">Job History</legend>
+
+        <div class="mb-3">
+          <label for="jobTitle" class="form-label">Job Title:</label>
+          <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Your job title" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="companyName" class="form-label">Company Name:</label>
+          <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Name of the company" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="employmentDuration" class="form-label">Employment Duration:</label>
+          <input type="text" class="form-control" id="employmentDuration" name="employmentDuration" placeholder="e.g., Jan 2020 - Dec 2022" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="responsibilities" class="form-label">Key Responsibilities:</label>
+          <textarea class="form-control" id="responsibilities" name="responsibilities" rows="4" placeholder="List your responsibilities and achievements" required></textarea>
+        </div>
+      </fieldset>
+
+      <h2 class="mt-5 mb-4">Projects</h2>
+
+      <fieldset class="border p-4 mb-4">
+        <legend class="w-auto">Project Details</legend>
+
+        <div class="mb-3">
+          <label for="projectImage" class="form-label">Project Image:</label>
+          <input type="file" class="form-control" id="projectImage" name="projectImage" accept="image/*">
+        </div>
+
+        <div class="mb-3">
+          <label for="clientName" class="form-label">Client/Company Name:</label>
+          <input type="text" class="form-control" id="clientName" name="clientName" placeholder="Name of the client or company">
+        </div>
+
+        <div class="mb-3">
+          <label for="projectTitle" class="form-label">Project Title:</label>
+          <input type="text" class="form-control" id="projectTitle" name="projectTitle" placeholder="Title of the project" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="solutions" class="form-label">Solutions Delivered:</label>
+          <textarea class="form-control" id="solutions" name="solutions" rows="4" placeholder="Describe the solutions provided"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="technologies" class="form-label">Technologies Used:</label>
+          <input type="text" class="form-control" id="technologies" name="technologies" placeholder="List the technologies used, separated by commas" required>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
